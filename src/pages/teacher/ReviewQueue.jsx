@@ -130,7 +130,7 @@ export default function ReviewQueue() {
                   {rec.surah_name} — {locale === 'ar' ? 'آيات' : 'Ayahs'} {rec.ayah_range}
                 </div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginTop: '0.15rem' }}>
-                  {formatTime(rec.duration)} · {new Date(rec.createdAt).toLocaleDateString(locale === 'ar' ? 'ar-EG' : 'en-US')}
+                  {formatTime(rec.duration)} · {new Date(rec.created_at).toLocaleDateString(locale === 'ar' ? 'ar-EG' : 'en-US')}
                 </div>
               </div>
               <Button variant="outline" size="sm">{locale === 'ar' ? 'مراجعة' : 'Review'} ←</Button>
